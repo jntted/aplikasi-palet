@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Identifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Color Palette Identifier</h1>
+        <p class="subtitle">Identifikasi warna dominan dari gambar</p>
+
+        <label for="imageInput" class="upload-button">
+            Pilih Gambar
+        </label>
+        <input type="file" id="imageInput" accept="image/*">
+
+        <p id="status">Pilih gambar untuk memulai.</p>
+
+        <img id="preview" alt="Preview gambar" hidden>
+
+        <section id="paletteSection" hidden>
+            <h2>Palet Warna</h2>
+            <div id="palette" class="palette"></div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
